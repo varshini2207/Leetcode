@@ -1,0 +1,22 @@
+class Solution {
+    public int numSteps(String s) {
+
+        long n= Long.parseLong(s, 2);
+         int count=0;
+        while(n!=1)
+        {
+            if(n%2!=0)
+            {
+                n=n+1;
+                            }
+            else
+            {
+                n=n/2;
+                
+            }
+            count++;
+        }
+        return count;
+        
+    }
+}
